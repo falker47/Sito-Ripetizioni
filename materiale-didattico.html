@@ -98,7 +98,7 @@
     <script>window.checkAndChangeSvgColor = function (c) { try { var a = document.getElementById(c); if (a) { c = [["border", "borderColor"], ["outline", "outlineColor"], ["color", "color"]]; for (var h, b, d, f = [], e = 0, m = c.length; e < m; e++)if (h = window.getComputedStyle(a)[c[e][1]].replace(/\s/g, "").match(/^rgb[a]?\(([0-9]{1,3}),([0-9]{1,3}),([0-9]{1,3})/i)) { b = ""; for (var g = 1; 3 >= g; g++)b += ("0" + parseInt(h[g], 10).toString(16)).slice(-2); "0" === b.charAt(0) && (d = parseInt(b.substr(0, 2), 16), d = Math.max(16, d), b = d.toString(16) + b.slice(-4)); f.push(c[e][0] + "=" + b) } if (f.length) { var k = a.getAttribute("data-src"), l = k + (0 > k.indexOf("?") ? "?" : "&") + f.join("&"); a.src != l && (a.src = l, a.outerHTML = a.outerHTML) } } } catch (n) { } };</script>
 </head>
 
-<body
+<body width: 100%; height: 100%; margin: 0; padding: 0;
     class="l layout wt-page ac-s ac-n l-boxed b-btn-r b-btn-s-l b-btn-dbb b-btn-bw-1 img-d-n img-t-u img-h-n line-solid b-e-ds lbox-l   hb-on wnd-free-bar-fixed  wnd-fe"
     style="background-color:#388E3C;">
 
@@ -566,32 +566,13 @@
                     <div class="sw-c cf">
                         <section data-wn-border-element="s-f-border"
                             class="s s-f s-f-edit sc-m wnd-background-solid  wnd-w-wide wnd-s-high wnd-h-auto">
-                            <div class="s-w">
-                                <div class="s-o">
-                                    <div class="s-bg">
-                                        <div class="s-bg-l" style="background-color:#388E3C">
-                                            <div class="copyright">
-                                                &copy; Maurizio Falconi <strong><span>Ripetizioni</span></strong>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="s-f-ez">
-                                        <div class="s-c s-f-border">
-                                            <div>
-                                                <div class="ez cf wnd-no-cols">
-                                                    <div class="ez-c">
-                                                        <div class="b b-text cf">
-                                                            <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            <div class="s-bg-l" style="background-color:#388E3C">
+                                <div class="copyright">
+                                    &copy; Maurizio Falconi <strong><span>Ripetizioni</span></strong>
                                 </div>
+                                
                             </div>
+                            
                             <div class="s-f-bg-stripe"></div>
                         </section>
                     </div>
